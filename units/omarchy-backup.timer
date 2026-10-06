@@ -1,0 +1,11 @@
+[Unit]
+Description=Schedule the home borgmatic backup
+
+[Timer]
+OnCalendar=daily
+AccuracySec=15min
+Persistent=true
+RandomizedDelaySec=30min
+
+[Install]
+WantedBy=timers.target

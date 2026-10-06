@@ -1,0 +1,12 @@
+[Unit]
+Description=Back up the home directory with borgmatic
+Documentation=https://torsion.org/borgmatic/
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/borgmatic create --verbosity 1
+Nice=19
+IOSchedulingClass=idle
+
+[Install]
+WantedBy=default.target

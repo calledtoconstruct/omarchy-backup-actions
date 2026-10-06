@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "calledtoconstruct.backup-actions",
+  "name": "Backup actions",
+  "version": "1.0.0",
+  "author": "calledtoconstruct",
+  "description": "Bar button to back up now, list Borg archives, restore one path, or install the user timer",
+  "license": "MIT",
+  "kinds": ["bar-widget"],
+  "entryPoints": {
+    "barWidget": "ActionsWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Backup actions",
+    "description": "Back up now, list, restore, or schedule",
+    "category": "Plugin",
+    "allowMultiple": false,
+    "defaultSection": "right"
+  }
+}
